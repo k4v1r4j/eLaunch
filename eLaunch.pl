@@ -18,8 +18,10 @@ print "==================\n";
 foreach my $key (sort {$a<=>$b} keys %result) {
     print $key."  ==========>  ".$result{$key}."\n";
 }
-print "Enter id: ";
-$u_id =<STDIN>;
-chomp($u_id);
-$status=system("$result{$u_id}&");
+if($id!=0) {
+    print "Enter id: ";
+    $u_id =<STDIN>;
+    chomp($u_id);
+    $status=system("$result{$u_id}&");
+}
 
