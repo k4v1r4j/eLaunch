@@ -24,4 +24,4 @@ if($id!=0) {
     chomp($u_id);
     $status=system("$result{$u_id}&");
 }
-
+exit(0);
